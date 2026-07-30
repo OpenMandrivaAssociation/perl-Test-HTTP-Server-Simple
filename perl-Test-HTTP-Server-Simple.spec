@@ -1,13 +1,14 @@
 %define upstream_name    Test-HTTP-Server-Simple
+%define upstream_version 0.11
 Name:		perl-%{upstream_name}
 Version:	0.11
-Release:	5
+Release:	1
 
 Summary:	Test::More functions for HTTP::Server::Simple
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://metacpan.org/dist/%{upstream_name}
-Source0:	http://www.cpan.org/modules/by-module/Test/%{upstream_name}-%{version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/A/AL/ALEXMV/Test-HTTP-Server-Simple-0.11.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -55,11 +56,3 @@ perl Makefile.PL INSTALLDIRS=vendor
 %{_mandir}/man3/*
 %{perl_vendorlib}/Test/
 
-%changelog
-* Fri Apr 30 2010 Michael Scherer <misc@mandriva.org> 0.110.0-1mdv2010.1
-+ Revision: 541112
-- import perl-Test-HTTP-Server-Simple
-
-
-* Fri Apr 30 2010 cpan2dist 0.11-1mdv
-- initial mdv release, generated with cpan2dist
